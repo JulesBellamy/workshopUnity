@@ -15,7 +15,7 @@ public class MovementBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Properties p = new Properties();
+        /*Properties p = new Properties();
         p.Hours = 30;
         Debug.Log(p.Minutes);
         p.Minutes = 30;
@@ -53,21 +53,26 @@ public class MovementBehaviour : MonoBehaviour
         CSharp.MemberHiding.ParentClass parent = new CSharp.MemberHiding.ParentClass();
         CSharp.MemberHiding.ParentClass child = new CSharp.MemberHiding.ChildClass();
 
-        Debug.Log(parent.name);
-        Debug.Log(child.name);
+        Debug.Log(parent.Name);
+        Debug.Log(child.Name);
 
         IMyInterface attacker = new Attacker();
-        attacker.Attack();
+        attacker.Attack();*/
+
+        Enemy enemy = new Enemy();
+        Character chara = new Character(enemy);
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        float inputH = Input.GetAxis("Horizontal");
+        /*float inputH = Input.GetAxis("Horizontal");
         float inputV = Input.GetAxis("Vertical");
         Vector3 velocity = new Vector3(inputH, 0, inputV);
-        transform.Translate(velocity * speed * Time.deltaTime);
+        transform.Translate(velocity * speed * Time.deltaTime);*/
+
     }
 
 }
